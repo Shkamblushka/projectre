@@ -1,0 +1,10 @@
+ /// checking for true/false for displaying a right text
+  const isTrue = true;
+  let textToDisplay;
+
+  if (isTrue) {
+    textToDisplay = <p>The variable is true.</p>;
+  } else {
+    textToDisplay = <p>The variable is false.</p>;
+  }
+  /// --------
