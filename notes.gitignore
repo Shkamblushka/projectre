@@ -1,0 +1,16 @@
+function App() {
+  const isTrue = false;
+  let textToDisplay;
+
+  if (isTrue) {
+    textToDisplay = <p>The variable is true.</p>;
+  } else {
+    textToDisplay = <p>The variable is false.</p>;
+  }
+
+  return (
+    <div>
+      {textToDisplay}
+    </div>
+  );
+}
