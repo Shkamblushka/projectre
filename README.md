@@ -8,10 +8,4 @@ Here are some fetures i wanna add in future:
  
  v2   ~~custom site icone~~                     10.09.2023
       
- v2   Contact data popup that will include:
- 
-    A place for Name
-    
-    A place for Email
-    
-    A place for text message (user input)
+ v2   ~~Contact data popup that will include~~  11.09.2023
