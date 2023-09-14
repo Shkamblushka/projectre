@@ -6,28 +6,17 @@ import data from './data.json'
 import Popup from 'reactjs-popup'
 
 
-function MyPopup() {
-  return (
-    <Popup trigger={<button className='secButton' style={{ width: "200px", height: "100px",}}>Trigger</button>} position="right center">
-       <input type="text" placeholder="Your nick name"/>
-       <br />
-       <input type='email' placeholder="Your email" />
-       <br />
-       <input type='text' placeholder="Your message" />
-       <br />
-       <button className='submitButton' style={{ width: "150px", height: "33px",}}><span className='submitButton'>Submit</span></button>
-    </Popup>
-  );
-}
+
 
 
 function App() {
-  ///const timesrolled = 0;
-
-
-  /// other website part
+  const savedData = localStorage.getItem('userData');
   const [timesrolled, setCount] = useState(0)
   const whererolled = false;
+
+  //localStorage.setItem("userData", JSON.stringify(timesrolled));
+
+
   let rolltext;
   if (whererolled) {
     rolltext = <h2>true</h2>
@@ -39,10 +28,10 @@ function App() {
       <div>
         <h1 className='not_sus_website'>Not sus website</h1>
         {rolltext}
-        <a href={data.video_link} target="_blank">
+        <a>
           <button onClick={() => setCount((timesrolled) => timesrolled + 1)} style={{ width: "200px", height: "100px",}}>Bebebebe, bebebe, bebebebe</button>
         </a>
-        <MyPopup></MyPopup>
+        <text>{savedData}</text>
       </div>
       <div>
         
